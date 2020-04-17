@@ -135,7 +135,6 @@ if __name__ == "__main__":
         name = val_data_list[idx].split('/')[0] 
         for key in input_phases:
             dice_V_A = avg_dsc(batch,source_key='venous_mask_recon', target_key='venous_mask_only',return_mean=False,binary=True).cpu().detach().numpy() 
-            output_row += list(dice_V_A[0,:])
 
             print(name,dice_V_A)
             DSC += dice_V_A
