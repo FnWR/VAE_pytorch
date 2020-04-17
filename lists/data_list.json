@@ -1,0 +1,1 @@
+{"train": ["test_data01/mask.npy"], "val": ["test_data02/mask.npy"]}
